@@ -55,6 +55,26 @@ a{
 .cf:after{display:block;clear:both;content:"";visibility:hidden;height:0}
 .cf{zoom:1}
 
+.logo{
+  position: fixed;
+  width:100%;
+  height:86px;
+  z-index:9;
+  .inner{
+    position: relative;
+    height:86px;
+  }
+  .music{
+    position: absolute;
+    right:18px;
+    bottom:0;
+  }
+  .lo{
+    position: absolute;
+    left:0;
+    bottom:0;
+  }
+}
 .nav{
   position:absolute;
   top:140px;
@@ -72,9 +92,12 @@ a{
   color:#fff;
   /* background:url(images/yuan.png)no-repeat; */
 }
+
+
 .nav .a1 a{
   text-indent:36px;
 }
+
 .nav .a1.active a,.nav .a1:hover a{
   background:url(../images/yuan.png)no-repeat;
   background-position:-1% 54%;
@@ -166,8 +189,8 @@ body{
 .tip .lipi .alt .bot{
   background:#e8a626;
   color:#fff;
-  width:336px;
-  height:90px;
+  width:288px;
+  height:50px;
   position: absolute;
   border-radius: 0 0 10px 10px;
   bottom:-90px;
@@ -189,4 +212,128 @@ body{
   -moz-transform:rotate(180deg); 	/* Firefox */
   -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
   -o-transform:rotate(180deg); 
+}
+.ycap{
+  .alt{
+    .bot{
+      padding:20px 24px;
+      p{
+        font-size: 18px;
+        color:#fff;
+      }
+      .button{
+        border:none;
+        background:#cc383e;
+        border-radius: 30px;
+        width:122px;
+        height:44px;
+        color:#fff;
+        position: absolute;
+        bottom:-10px;
+        right:-20px;
+        font-size: 16px;
+        text-align: center;
+        line-height:44px;
+      }
+    }
+  }
+  .alone{
+    position: absolute;
+    bottom: -20px;
+    left: -74px;
+  }
+  .alone1{
+    position: absolute;
+    bottom: 0px;
+    left: -41px;
+  }
+  .alone3{
+    position: absolute;
+    bottom: -20px;
+    left: -46px;
+  }
+  .alone4{
+    position: absolute;
+    bottom: -20px;
+    left: -24px;
+  }
+}
+
+.wrap{
+  position: relative;
+  left: -50px;
+  top: -40px;
+  height:670px;
+  width:771px;
+  overflow: hidden;
+  img{
+    width:0;  
+    position: absolute;
+    right:0;
+    bottom:170px;
+  }
+  .f1{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: -2px;
+    left: 288px;
+  }
+  .f2{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: 178px;
+    left: 198px;
+  }
+  .f3{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: 169px;
+    left: 87px;
+  }
+  .f4{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: 245px;
+    left: -4px;
+  }
+  .f5{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: 494px;
+    left: 134px;
+  }
+  .f6{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: 608px;
+    left: 18px;
+  }
+  .f7{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: 596px;
+    left: 247px;
+  }
+  .f8{
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 20px;
+    top: 552px;
+    left: 473px;
+  }
 }

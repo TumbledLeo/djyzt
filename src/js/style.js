@@ -20,14 +20,15 @@ $(function () {
           $(ele + ' .tabContents .tabContent').hide().eq(index).fadeIn();
       });
   }
-
   tabCtrl('.navbar');
   tabCtrl('.ycap');
+  tabCtrl('.ysj');
   //$('html,body').animate({scrollTop: $(this.hash).offset().top - 100}, 600);
   $(".nav a").bind("click touch",function(){
     //根据a标签的href转换为id选择器，获取id元素所处的位置，并高度减50px（这里根据需要自由设置）
     $('html,body').animate({scrollTop: ($($(this).attr('href')).offset().top)},500,function(){
-      $(document).bind('mousewheel', function(event, delta) {return false;});  
+     // $(document).addEventListener('mousewheel', function(event, delta) {return false;});  
+      //火狐浏览器必须用addEventListener！addEventListener绑定的事件需要通过event下面的preventDefault();
     });
     
   });
@@ -43,9 +44,13 @@ function onMouseScroll(e){
       setTimeout(function(){$('.top').fadeOut()},200);
       
     }else{//向上滚动
-      $('.swip').removeClass("anit");
-      $('.swipp').removeClass("anitt");
-      $('.top').fadeIn();
+    //   $('.swip').removeClass("anit");
+    //   $('.swipp').removeClass("anitt");
+    //   $('.top').fadeIn();
     }    
 }
+$('.a5').hover(function(){
+    $('.wrap img').animate({width:"100%",bottom:"0"},800);
+},function(){
+});
 });

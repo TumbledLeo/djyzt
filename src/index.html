@@ -22,6 +22,7 @@
     </script>
     <meta charset="UTF-8">
     <title>国家大剧院专题页</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/ico.ico">
     <!-- <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="lib/animate.min.css">
     <link rel="stylesheet" href="lib/swiper.min.css">
@@ -74,6 +75,12 @@ $('.banner,.show').css("height",hh);
 </head>
 <!-- style="overflow: hidden;" -->
 <body >
+    <div class="logo">
+        <div class="inner">
+            <a href="" class="lo"><img src="images/logo.png" alt=""></a>
+            <a href="#" class="music"><img src="images/music.png" alt=""></a>
+        </div> 
+    </div>
 <div class="banner top">
     <div class="inner cf">
         <div class="left  swip">
@@ -84,7 +91,7 @@ $('.banner,.show').css("height",hh);
         </div>
     </div>            
 </div>
-<div class="show">
+<div class="show " id="dh">
     <div class="inner cf">
         <div class="left">
             <img class="banner_bg2" src="images/banner_bg2.jpg" alt="">
@@ -93,7 +100,23 @@ $('.banner,.show').css("height",hh);
             <img class="banner_bg1" src="images/banner_bg1.jpg" alt="">
             <ol class="slid tabContents">
                 <li class="tabContent"><a href="#tip1"><img src="images/01.png" alt=""></a></li>
-                <li class="tabContent"><a href="#tip2"><img src="images/02.png" alt=""></a></li>    
+                <li class="tabContent"><a href="#tip2"><img src="images/02.png" alt=""></a></li> 
+                <li class="tabContent"><a href="#tip3"><img src="images/03.png" alt=""></a></li>
+                <li class="tabContent"><a href="#tip4"><img src="images/04.png" alt=""></a></li> 
+
+                <li class="tabContent">
+                    <div class="wrap">
+                        <img src="images/05.png" alt="">
+                        <a href="#" class="f1"></a>
+                        <a href="#"class="f2"></a>
+                        <a href="#"class="f3"></a>
+                        <a href="#"class="f4"></a>
+                        <a href="#"class="f5"></a>
+                        <a href="#"class="f6"></a>
+                        <a href="#"class="f7"></a>
+                        <a href="#"class="f8"></a>
+                    </div>
+                </li>   
             </ol>
             <div class="nav tabs">
                 <ul>
@@ -109,6 +132,7 @@ $('.banner,.show').css("height",hh);
         </div>
     </div>
 </div>
+<!-- 演出安排 -->
 <div id="tip1" class="tip">
         <div class="inner cf ycap">
                 <div class="left">
@@ -128,21 +152,103 @@ $('.banner,.show').css("height",hh);
                     <ol class="lipi tabContents">
                         <li class="tabContent"><a href="">
                             <div class="alt">
-                                <img src="images/yc_a2.jpg" alt="">
+                                <img src="images/yc_a1.jpg" alt="">
                                 <div class="bot">
                                     <p>2018.12.20 - 2018.12.25</p>
-                                    <p>歌剧院</p>
-                                    <button>立即订票</button>
+                                    <p>音乐厅</p>
+                                    <!-- <button>立即订票</button> -->
+                                    <a href="#" class="button">立即订票</a>
                                 </div>
                             </div>
+                            <div class="alone1">
+                                <img src="images/alone1.png" alt="">
+                            </div>
                         </a></li>
+                        <li class="tabContent"><a href="">
+                                <div class="alt">
+                                    <img src="images/yc_a2.jpg" alt="">
+                                    <div class="bot">
+                                        <p>2018.12.20 - 2018.12.25</p>
+                                        <p>歌剧院</p>
+                                        <!-- <button>立即订票</button> -->
+                                        <a href="#" class="button">立即订票</a>
+                                    </div>
+                                </div>
+                                <div class="alone">
+                                    <img src="images/alone.png" alt="">
+                                </div>
+                            </a></li>
+                            <li class="tabContent"><a href="">
+                                    <div class="alt">
+                                        <img src="images/yc_a3.jpg" alt="">
+                                        <div class="bot">
+                                            <p>2018.12.20 - 2018.12.25</p>
+                                            <p>戏剧场</p>
+                                            <!-- <button>立即订票</button> -->
+                                            <a href="#" class="button">立即订票</a>
+                                        </div>
+                                    </div>
+                                    <div class="alone3">
+                                        <img src="images/alone3.png" alt="">
+                                    </div>
+                                </a></li>
+                                <li class="tabContent"><a href="">
+                                        <div class="alt">
+                                            <img src="images/yc_a4.jpg" alt="">
+                                            <div class="bot">
+                                                <p>2018.12.20 - 2018.12.25</p>
+                                                <p>小剧场</p>
+                                                <!-- <button>立即订票</button> -->
+                                                <a href="#" class="button">立即订票</a>
+                                            </div>
+                                        </div>
+                                        <div class="alone4">
+                                            <img src="images/alone4.png" alt="">
+                                        </div>
+                                    </a></li>
                     </ol>
                 </div>
             </div>
 </div>
-
-
-<!-- <a class="back" href="javascript:;"></a> -->
+<!-- 网上艺术节 -->
+<div id="tip2" class="tip">
+    <div class="inner cf ysj">
+            <div class="left">
+                <img src="images/tip1.jpg" alt="">
+                <div class="lip">
+                    <h2>演出安排</h2>
+                    <ul class="tabs"><a href=""></a>
+                        <li class="tab"><a href="#">  国家大剧院建院十一周年音乐会</a></li>
+                        <li class="tab"><a href="">国家大剧院中国原创歌剧《兰花花》</a></li>
+                        <li class="tab"><a href="">国家大剧院原创民族舞剧《天路》</a></li>
+                        <li class="tab"><a href="">国家大剧院原创儿童歌剧《没头脑和不高兴》</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/tip2.jpg" alt="">
+                <ol class="lipi tabContents">
+                    <li class="tabContent"><a href="">
+                        <div class="alt">
+                            <img src="images/yc_a2.jpg" alt="">
+                            <div class="bot">
+                                <p>2018.12.20 - 2018.12.25</p>
+                                <p>歌剧院</p>
+                                <!-- <button>立即订票</button> -->
+                                <a href="#" class="button">立即订票</a>
+                            </div>
+                        </div>
+                        <div class="alone">
+                            <img src="images/alone.png" alt="">
+                        </div>
+                    </a></li>
+                </ol>
+            </div>
+        </div>
+</div>
+<!-- 开放日全攻略 -->
+<!-- 媒体之声 -->
+<!-- 往届回顾 -->
 
 
 <!-- <script src="lib/swiper.min.js"></script>
