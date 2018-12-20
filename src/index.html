@@ -2,7 +2,7 @@
 <html>
 <head>
     <!-- 判断是手机还是pc -->
-    <script>
+    <!-- <script>
         function IsPC() {
             var userAgentInfo = navigator.userAgent;
             var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
@@ -19,9 +19,9 @@
         if (!IsPC()) {
             window.location.href = 'm/index.html';//  这是手机版网址
         }
-    </script>
+    </script> -->
     <meta charset="UTF-8">
-    <title>国家大剧院专题页</title>
+    <title>国家大剧院十一周年专题</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="lib/swiper.min.css">
     <script src="lib/jquery/jquery-2.1.1.min.js"></script>
@@ -30,14 +30,16 @@
 </head>
 
 <body>
+    <audio src="media/1.mp3" autoplay="autoplay" loop="loop" id="aud">
+        您的浏览器不支持 audio 标签。
+    </audio>
     <div class="logo">
         <div class="inner">
-            <a href="" class="lo"><img src="images/logo.png" alt=""></a>
-            <a href="#" class="music"><img src="images/music.png" alt=""></a>
+            <a href="" class="lo"><img src="images/logo.png" alt=""></a>     
+            <a href="javascript:;" class="menu" id="s0"><img src="images/menu.png" alt=""></a>
+            <a href="#" class="music play" ><img src="images/music.png" alt=""></a>
         </div> 
-        <div class="inner">       
-                <a href="javascript:;" class="music" id="s0"><img src="images/music.png" alt=""></a>
-        </div> 
+        
     </div>
 <div class="banner top">
     <div class="inner cf">
@@ -54,7 +56,8 @@
         </div>
     </div>            
 </div>
-<div class="show wo1 s0" >
+<!-- 菜单 -->
+<div class="show wo1 s0" id = "s01">
     <div class="inner cf">
         <div class="left">
             <img class="banner_bg2" src="images/banner_bg2.jpg" alt="">
@@ -70,25 +73,25 @@
                 <li class="tabContent">
                     <div class="wrap">
                         <img src="images/05.png" alt="">
-                        <a href="#" class="f1"></a>
-                        <a href="#"class="f2"></a>
-                        <a href="#"class="f3"></a>
-                        <a href="#"class="f4"></a>
-                        <a href="#"class="f5"></a>
-                        <a href="#"class="f6"></a>
-                        <a href="#"class="f7"></a>
-                        <a href="#"class="f8"></a>
+                        <a href="http://www.chncpa.org/subsite/yuanqing/index.html" class="f1"target="_block"></a>
+                        <a href="http://www.chncpa.org/subsite/2011yq/index.html"class="f2"target="_block"></a>
+                        <a href="http://www.chncpa.org/subsite/yuanqing2012/index.html"class="f3"target="_block"></a>
+                        <a href="http://www.chncpa.org/subsite/kfr2013/index.html"class="f4"target="_block"></a>
+                        <a href="http://www.chncpa.org/subsite/yuanqing2014/index.html"class="f5"target="_block"></a>
+                        <a href="http://www.chncpa.org/subsite/yuanqing2015/index.html"class="f6"target="_block"></a>
+                        <a href="http://www.chncpa.org/subsite/yuanqing2016/"class="f7"target="_block"></a>
+                        <a href="http://www.chncpa.org/subsite/szn2017/"class="f8" target="_block"></a>
                     </div>
                 </li>   
             </ol>
             <div class="nav tabs">
                 <ul>
-                    <li class="tab a1 active"><a href="javascript:;" id="s1">演出安排</a>    </li>
-                    <li class=" tab a2"><a href="javascript:;" id="s2">网上艺术节</a></li>
-                    <li class="tab a3"><a href="javascript:;" id="s3">开放日全攻略</a></li>
+                    <li class="tab a1 active a"><a href="javascript:;" id="s1">演出安排</a>    </li>
+                    <li class=" tab a2 a"><a href="javascript:;" id="s2">网上艺术节</a></li>
+                    <li class="tab a3 a"><a href="javascript:;" id="s3">开放日全攻略</a></li>
                     <!-- <li class="tab a4"><a href="#tip4">媒体之声</a></li>
                     <li class="tab a4"><a href="#tip4">媒体之声</a></li> -->
-                    <li class="tab a5"><a href="javascript:;" id="s4">往届回顾</a></li>
+                    <li class="tab a5"><p> 往届回顾</p>  </li>
                 </ul>
                 
             </div>
@@ -103,67 +106,67 @@
                     <img src="images/tip1.jpg" alt="">
                     <div class="lip">
                         <h2>演出安排</h2>
-                        <ul class="tabs"><a href=""></a>
-                            <li class="tab"><a href="">  国家大剧院建院十一周年音乐会</a></li>
-                            <li class="tab"><a href="">国家大剧院中国原创歌剧《兰花花》</a></li>
-                            <li class="tab"><a href="">国家大剧院原创民族舞剧《天路》</a></li>
-                            <li class="tab"><a href="">国家大剧院原创儿童歌剧《没头脑和不高兴》</a></li>
+                        <ul class="tabs">
+                            <li class="tab"><a href="javascript:;">  国家大剧院建院十一周年音乐会</a></li>
+                            <li class="tab"><a href="javascript:;">国家大剧院中国原创歌剧《兰花花》</a></li>
+                            <li class="tab"><a href="javascript:;">国家大剧院原创民族舞剧《天路》</a></li>
+                            <li class="tab"><a href="javascript:;">国家大剧院原创儿童歌剧《没头脑和不高兴》</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="right">
                     <img src="images/tip2.jpg" alt="">
                     <ol class="lipi tabContents">
-                        <li class="tabContent"><a href="">
+                        <li class="tabContent"><a href="http://ticket.chncpa.org/product-1053012.html" target="_block">
                             <div class="alt">
                                 <img src="images/yc_a1.jpg" alt="">
                                 <div class="bot">
                                     <p>2018.12.20 - 2018.12.25</p>
                                     <p>音乐厅</p>
                                     <!-- <button>立即订票</button> -->
-                                    <a href="#" class="button">立即订票</a>
+                                    <!-- <a href="http://ticket.chncpa.org/product-1053012.html" class="button" target="_block">立即订票</a> -->
                                 </div>
                             </div>
                             <div class="alone1">
                                 <img src="images/alone1.png" alt="">
                             </div>
                         </a></li>
-                        <li class="tabContent"><a href="">
+                        <li class="tabContent"><a href="http://ticket.chncpa.org/product-1053781.html" target="_block">
                                 <div class="alt">
                                     <img src="images/yc_a2.jpg" alt="">
                                     <div class="bot">
                                         <p>2018.12.20 - 2018.12.25</p>
                                         <p>歌剧院</p>
                                         <!-- <button>立即订票</button> -->
-                                        <a href="#" class="button">立即订票</a>
+                                        <a href="http://ticket.chncpa.org/product-1053781.html" class="button" target="_block">立即订票</a>
                                     </div>
                                 </div>
                                 <div class="alone">
                                     <img src="images/alone.png" alt="">
                                 </div>
                             </a></li>
-                            <li class="tabContent"><a href="">
+                            <li class="tabContent"><a href="http://ticket.chncpa.org/product-1053859.html" target="_block">
                                     <div class="alt">
                                         <img src="images/yc_a3.jpg" alt="">
                                         <div class="bot">
                                             <p>2018.12.20 - 2018.12.25</p>
                                             <p>戏剧场</p>
                                             <!-- <button>立即订票</button> -->
-                                            <a href="#" class="button">立即订票</a>
+                                            <a href="http://ticket.chncpa.org/product-1053859.html" class="button" target="_block">立即订票</a>
                                         </div>
                                     </div>
                                     <div class="alone3">
                                         <img src="images/alone3.png" alt="">
                                     </div>
                                 </a></li>
-                                <li class="tabContent"><a href="">
+                                <li class="tabContent"><a href="http://ticket.chncpa.org/product-1054649.html" target="_block">
                                         <div class="alt">
                                             <img src="images/yc_a4.jpg" alt="">
                                             <div class="bot">
                                                 <p>2018.12.20 - 2018.12.25</p>
                                                 <p>小剧场</p>
                                                 <!-- <button>立即订票</button> -->
-                                                <a href="#" class="button">立即订票</a>
+                                                <a href="http://ticket.chncpa.org/product-1054649.html" class="button" target="_block">立即订票</a>
                                             </div>
                                         </div>
                                         <div class="alone4">
@@ -179,21 +182,21 @@
         <div class="inner cf ycap">
                 <div class="left">
                     <img src="images/ysj1.jpg" alt="">
-                    <a href="#" style="width: 465px;
+                    <!-- <a href="#" style="width: 465px;
                     height: 258px;
                     display: block;
                     position: absolute;
                     top: 388px;
-                    left: 103px;"></a>
+                    left: 103px;"></a> -->
                 </div>
                 <div class="right">
                     <img src="images/ysj2.jpg" alt="" >
-                    <a href="#" style="width: 465px;
+                    <!-- <a href="#" style="width: 465px;
                     height: 258px;
                     display: block;
                     position: absolute;
                     top: 388px;
-                    left: 68px;"></a>
+                    left: 68px;"></a> -->
                 </div>
             </div>
 </div>
@@ -204,20 +207,20 @@
                     <img src="images/tip11.jpg" alt="">
                     <div class="kfr">                      
                         <ul class="cf">
-                            <li class="left"><h2>开放日艺术节</h2></li>
+                            <li class="left" ><h2 style="font-weight:bold;font-size: 26px;">开放日艺术节</h2></li>
                             <li class="left">                              
                                 <ol class="cf abig">
-                                    <li class="left big"><h2>进行时</h2></li>
-                                    <li class="left  big active"><h2>全攻略</h2></li>
+                                    <li class="left big ring"><h2>全攻略</h2></li>
+                                    <li class="left  big all"><h2>进行时</h2></li>
                                 </ol>
                             </li>
                         </ul>
-                        <div class="gl_1 ">
+                        <div class="gl_1 glue">
                                 <ul class="tabs cf">
                                         <li class="tab active">演出</li>
                                         <li class="tab">活动</li>
                                         <li class="tab">公共空间</li>
-                                        <li class="tab">餐饮</li>
+                                        <li class="tab">餐饮购物</li>
                                         <li class="tab">特别展览</li>
                                         <li class="tab hot">官网体验区<i><img src="images/hot.png" alt=""></i></li>
                                     </ul>
@@ -236,30 +239,30 @@
                                                         <ul>
                                                             <li class="sl"><a href="">
                                                                 <img src="images/yinyt1.png" alt="">
-                                                                <div class="des">
+                                                                <!-- <div class="des">
                                                                     <h4>合唱音乐会</h4>
                                                                     <p>时间：9:30-10:15、10:45-11:30</p>
                                                                     <p>演出团体：国家大剧院合唱团</p>   
                                                                     <p>指挥：焦淼</p>   
-                                                                </div>
+                                                                </div> -->
                                                             </a></li>
                                                             <li class="sl"><a href="">
                                                                 <img src="images/yinyt2.png" alt="">
-                                                                <div class="des">
+                                                                <!-- <div class="des">
                                                                     <h4>合唱音乐会</h4>
                                                                     <p>时间：9:30-10:15、10:45-11:30</p>
                                                                     <p>演出团体：国家大剧院合唱团</p>   
                                                                     <p>指挥：焦淼</p>   
-                                                                </div>
+                                                                </div> -->
                                                             </a></li>
                                                             <li class="sl"><a href="">
-                                                                <img src="images/yinyt2.png" alt="">
-                                                                <div class="des">
+                                                                <img src="images/yinyt3.png" alt="">
+                                                                <!-- <div class="des">
                                                                     <h4>合唱音乐会</h4>
                                                                     <p>时间：9:30-10:15、10:45-11:30</p>
                                                                     <p>演出团体：国家大剧院合唱团</p>   
                                                                     <p>指挥：焦淼</p>   
-                                                                </div>
+                                                                </div> -->
                                                             </a></li>
                                                         </ul>
                                                     </div>
@@ -294,6 +297,29 @@
                                                 <div class="swiper-button-next"></div>
                                             </div>
                                         </li>
+                                        <li class="tabContent">
+                                                <ul class="hd">
+                                                    <li class="">
+                                                        <h5>新闻发布厅（戏剧场三层）<i></i></h5>
+                                                        <div class="more">
+                                                           <img src="images/hd_1.png" alt="">        
+                                                        </div>
+                                                    </li>
+                                                    <li class=""><h5>艺术资料中心（音乐厅四层）<i></i></h5>
+                                                        <div class="more">
+                                                                <img src="images/hd_2.png" alt="">        
+                                                             </div></li>
+                                                    <li class=""><h5>花瓣厅（歌剧院五层）<i></i></h5>
+                                                        <div class="more">
+                                                                <img src="images/hd_3.png" alt="">        
+                                                             </div></li>
+                                                    <li class=""><H5>橄榄厅<i></i></H5>
+                                                        <div class="more">
+                                                                <img src="images/hd_4.png" alt="">        
+                                                             </div></li>
+                                                </ul> 
+                                                
+                                        </li>
                                         <li class="tabContent so">
                                             <ul class="ggkj tabs1">
                                                 <li class="active tab1">
@@ -311,21 +337,217 @@
                                                     <a href="#"style="display:block;left: -385px;top: 0;position:absolute"><img src="images/li_2.png" alt=""></a>                                               
                                                 </li>
                                                 <li class="tabContent1">
-                                                        <a href="#" style="display:block;position:absolute;top:0;left:0;"><img src="images/li_1.png" alt=""></a>
-                                                        <a href="#"style="display:block;left: -385px;top: 0;position:absolute"><img src="images/li_2.png" alt=""></a>                                               
+                                                    <a href="#" style="display:block;position:absolute;top:60px;left:-84px;"><img src="images/li_3.png" alt=""></a>                                                      
+                                                </li>
+                                                <li class="tabContent1">
+                                                    <a href="#" style="display:block;position:absolute;top:60px;left:-84px;"><img src="images/li_4.png" alt=""></a>                                                      
+                                                </li>
+                                                
+                                                <li class="tabContent1">
+                                                        <a href="#" style="display:block;position:absolute;top:0;left:-84px;"><img src="images/li_8.png" alt=""></a>                                                      
+                                                    </li>
+                                                <li class="tabContent1">
+                                                    <a href="#" style="display:block;position:absolute;top:0;left:-54px;"><img src="images/li_7.png" alt=""></a>                                                      
+                                                </li>
+                                                <li class="tabContent1">
+                                                        <a href="#" style="display:block;position:absolute;top:53px;left:-44px;"><img src="images/li_6.png" alt=""></a>
+                                                        <a href="#"style="display:block;left: -385px;top: 0;position:absolute"><img src="images/li_5.png" alt=""></a>                                             
                                                 </li>
                                             </ol>
                                         </li>
-                                        <li class="tabContent">                              
-                                                <img src="images/cy.png" alt="" style="left: 44px;top: 140px;">
+                                        <li class="tabContent cany">                              
+                                            <img src="images/cy.png" alt="" style="left: 60px;top: 140px;">
+                                            <a href="#" class="cy1 cy" style="position:absolute;width:30%;height:66%;left:10%;"></a>
+                                            <a href="#" class="cy2 cy"style="position:absolute;width:30%;height:66%;left:40%;"></a>
+                                            <a href="#" class="cy3 cy"style="position:absolute;width:30%;height:66%;right:0;"></a>
+                                            <div class="flay">
+                                                <img src="images/cy_1.jpg" alt="">
+                                                <a href="#" class="close"></a>
+                                            </div>
+                                            <div class="flay">
+                                                 <img src="images/cy_2.jpg" alt="">
+                                                 <a href="#" class="close"></a>
+                                                </div>
+                                            <div class="flay">
+                                                <img src="images/cy_3.jpg" alt="" style=" margin-left: -400px;width: 800px;">
+                                                <a href="#" class="close" style="margin-left: 420px;"></a>
+                                            </div>
+                                        </li>                                       
+                                        <li class="tabContent s4">                              
+                                            <div class="swiper-container swiper-container2">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="http://www.chncpa.org/zwzt/zlzt/ssgdyw_2973/" target="_block">                                                       
+                                                        <ul class="cf tbzl">
+                                                            <li class="left">
+                                                                <div class="cos">
+                                                                    <h3>东展厅</h3>
+                                                                    <div class="img">
+                                                                        <img src="images/zl_1.jpg" alt="">
+                                                                        <div class="des">
+                                                                            <h2>靳尚谊、钟涵油画作品展</h2>
+                                                                            <div class="cs">
+
+                                                                            
+                                                                            <p>讲解时间：</p>
+                                                                            <p>9:30-10:00/10:30-11:00/14:00-14:30/15:00-15:30</p>                                                                 </div>         
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>  
+                                                    </a>                                                     
+                                                    </div>
+                                                    <div class="swiper-slide"> <a href="" target="_block">                                                      
+                                                            <ul class="cf tbzl">
+                                                                <li class="left">
+                                                                    <div class="cos">
+                                                                        <h3>西展厅</h3>
+                                                                        <div class="img">
+                                                                                <img src="images/zl_2.jpg" alt="">
+                                                                                <div class="des">
+                                                                                    <h2>国家大剧院原创与制作剧目展</h2>
+                                                                                    <div class="cs">
+                                                                                    <p>讲解时间：</p>
+                                                                                    <p>9:30-10:00/10:30-11:00/14:00-14:30/15:00-15:30</p>                                                           </div>            
+                                                                                </div>
+                                                                            </div>
+                                                                    </div>
+                                                                </li>
+                                                               
+                                                            </ul>                                                       
+                                                        </a></div>
+                                                    <div class="swiper-slide"><a href="http://www.chncpa.org/zwzt/zlzt/djyysg/" target="_block">                                                        
+                                                                <ul class="cf tbzl">
+                                                                    
+                                                                    <li class="left">
+                                                                            <div class="cos">
+                                                                                <h3>艺术馆</h3>
+                                                                                <div class="img">
+                                                                                        <img src="images/zl_3.jpg" alt="">
+                                                                                        <div class="des">
+                                                                                            <h2>国家大剧院艺术成果展</h2>
+                                                                                            <div class="cs">
+                                                                                            <p>讲解时间：</p>
+                                                                                            <p>9:30-10:00/10:30-11:00/14:00-14:30/15:00-15:30</p>                                                         </div>                 
+                                                                                        </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                     </li>
+                                                                </ul>                                                       
+                                                            </a></div>
+                                                    <div class="swiper-slide"><a href="http://www.chncpa.org/cgyl_278/yszl/zzzc/201811/t20181118_193119.shtml" target="_block"> 
+                                                        <ul class="cf tbzl">
+                                                                    
+                                                                    <li class="left">
+                                                                        <div class="cos">
+                                                                            <h3>音乐厅四层环廊</h3>
+                                                                            <div class="img">
+                                                                                    <img src="images/zl_5.jpg" alt="">
+                                                                                    <div class="des">
+                                                                                        <h2>百年留声——中国唱片展</h2>
+                                                                                        <div class="cs">
+                                                                                                <p>讲解时间：</p>
+                                                                                                <p>9:30-10:00/10:30-11:00/14:00-14:30/15:00-15:30</p>  
+                                                                                        </div>
+                                                                                                                                                                
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+                                                                    </li>
+                                                                   
+                                                        </ul> 
+                                                    </a></div>
+                                                    <div class="swiper-slide"><a href="http://www.chncpa.org/cgyl_278/yszl/zzzc/201811/t20181118_193119.shtml" target="_block"> 
+                                                            <ul class="cf tbzl">
+                                                                    <li class="left">
+                                                                        <div class="cos">
+                                                                            <h3>艺术沙龙</h3>
+                                                                            <div class="img">
+                                                                                <img src="images/zl_4.jpg" alt="">
+                                                                                <div class="des">
+                                                                                    <h2>舞台道具背后的秘密</h2>
+                                                                                    <div class="cs">
+                                                                                        <p>讲解时间：</p>
+                                                                                        <p>9:30-10:00/10:30-11:00/14:00-14:30/15:00-15:30</p>                                                 </div>                 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                              
+                                                                </ul> 
+                                                    
+                                                            </a>        </div> 
+
+                                                </div>                                                                                
+                                                
+                                            </div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
                                         </li>
                                         <li class="tabContent">                              
-                                            <img src="images/ty.png" alt="" style="left: 62px;top: 132px;">
-                                        </li>
+                                                <img src="images/ty.png" alt="" style="left: 100px;top: 132px;">
+                                            </li>
                                     </ol>
                         </div>
-                        <div class="wgl_2">
-
+                        <div class="wgl_2 glue">
+                                <div class="box">
+                                        <div class="list cf">
+                                        <ul>
+                                            <!-- 注：下边的li标签前五个必须有且只有p1-p5的class !!!-->
+                                        <!-- <li class="p5" ><a href="#"><img src="images/tbch3.jpg" alt="" /><p>2018-2019青年作曲家计划</p></a></li> -->
+                                        <li class="p4" ><a href="#"><img src="images/gl_1.jpg" alt="" /><p>十一周年公众开放日即将开幕</p></a></li>
+                                        <li class="p3" ><a href="#"><img src="images/gl_1.jpg" alt="" /><p>十一周年公众开放日即将开幕</p></a></li>
+                                        <li class="p2" ><a href="#"><img src="images/gl_1.jpg" alt="" /><p>十一周年公众开放日即将开幕</p></a></li>
+                                        <li class="p1" ><a href="#"><img src="images/gl_1.jpg" alt="" /><p>十一周年公众开放日即将开幕</p></a></li>
+                                        </ul>
+                                        <!-- <div class="buttons">
+                                                <a href="javascript:;"><span class="blue"></span></a>
+                                        </div> -->
+                                        <a href="javascript:;" class="prev btn"><img src="images/news_left.png" alt=""></a>
+                                        <a href="javascript:;" class="next btn"><img src="images/news_right.png" alt=""></a>
+                                        </div>      
+                                </div>
+                                <div class="news">
+                                   
+                                            <div class="swiper-container swiper-container3">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">         
+                                                            <ul class="new">
+                                                            <li><a href="#"><img src="images/new1.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                            <li><a href="#"><img src="images/new2.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                            <li><a href="#"><img src="images/new3.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                            <li><a href="#"><img src="images/new4.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                              
+                                                            </ul>
+                                                            <ul class="new">                                                                 
+                                                                    <li><a href="#"><img src="images/new5.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                    <li><a href="#"><img src="images/new6.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                    <li><a href="#"><img src="images/new7.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                    <li><a href="#"><img src="images/new8.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>                   
+                                                            </ul>
+                                                        </div>
+                                                        <div class="swiper-slide">         
+                                                                <ul class="new">
+                                                                <li><a href="#"><img src="images/new1.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                <li><a href="#"><img src="images/new2.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                <li><a href="#"><img src="images/new3.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                <li><a href="#"><img src="images/new4.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                                  
+                                                                </ul>
+                                                                <ul class="new">                                                                 
+                                                                        <li><a href="#"><img src="images/new5.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                        <li><a href="#"><img src="images/new6.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                        <li><a href="#"><img src="images/new7.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>
+                                                                        <li><a href="#"><img src="images/new8.jpg" alt=""><h6>公众开放日艺术节即将开幕</h6><p>国家大剧院<span>2018/12/14</span></p></a></li>                   
+                                                                </ul>
+                                                        </div>
+                                                    </div>                                                                                
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div>
+                                    
+                                </div> 
                         </div>
                     </div>
                 </div>
@@ -335,14 +557,33 @@
                 </div>
         </div>
 </div>
-<div id="tip4" class="tip wo1 s4">
-
-</div>
 
 
 <script>        
     var mySwiper = new Swiper ('.swiper-container1', {
       direction: 'vertical', // 垂直切换选项
+      loop: true, // 循环模式选项      
+      // 如果需要前进后退按钮
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    observer:true,//修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true,//修改swiper的父元素时，自动初始化swiper
+    }) ;
+    var mySwiper = new Swiper ('.swiper-container2', {
+      loop: true, // 循环模式选项      
+      // 如果需要前进后退按钮
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView : 3,
+    observer:true,//修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true,//修改swiper的父元素时，自动初始化swiper
+    });
+    var mySwiper = new Swiper ('.swiper-container3', {
+        direction: 'vertical',
       loop: true, // 循环模式选项      
       // 如果需要前进后退按钮
       navigation: {
