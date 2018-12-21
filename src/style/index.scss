@@ -655,7 +655,7 @@ body{
   }
   .btn{
     position: absolute;
-    top: 68%;
+    top: 58%;
     margin-top: -84px;
     width: 34px;
     height:34px;
@@ -784,28 +784,26 @@ overflow: hidden;/*超出部分隐藏*/
         position: relative;
       }
       p{
-        position: absolute;
-        bottom:6px;
+        text-indent:6px;
         color:#fff;
         font-size: 14px;
         font-weight: normal;
-        left:6px;
         padding-right:16px;
-        width:208px;
         span{
           float:right;
         }
       }
       h6{
-        position: absolute;
-        bottom:30px;
+        text-indent:6px;
         color:#fff;
         font-size: 16px;
-        left:6px;
         width:100%;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
+      }
+      .des{
+        background:rgba(0,0,0,0.4);position: absolute;bottom: 0;width: 100%;
       }
     }
   }

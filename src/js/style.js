@@ -113,6 +113,11 @@ function tabCtrl2(ele) {
         $('.s0').css("display","block");
         $('#s0').css("display","none");
     });
+    $('.go').click(function(){
+        $('.wo1').css("display","none");
+        $('.s3').css("display","block");
+        //$('#s0').css("display","none");
+    });
     $('.a5').hover(function(){
         $('.wrap img').animate({width:"100%",bottom:"0"},800);
     },function(){
@@ -181,17 +186,17 @@ function tabCtrl2(ele) {
 			}
 			
 			
-			//点击class为p2的元素触发上一张照片的函数
-			$(document).on("click",".p2",function(){
-				previmg();
-				return false;//返回一个false值，让a标签不跳转
-			});
+			// //点击class为p2的元素触发上一张照片的函数
+			// $(document).on("click",".p2",function(){
+			// 	previmg();
+			// 	return false;//返回一个false值，让a标签不跳转
+			// });
 			
-			//点击class为p4的元素触发下一张照片的函数
-			$(document).on("click",".p4",function(){
-				nextimg();
-				return false;
-			});
+			// //点击class为p4的元素触发下一张照片的函数
+			// $(document).on("click",".p4",function(){
+			// 	nextimg();
+			// 	return false;
+			// });
 			
 	    $('.all').click(function(){
             $('#tip3 .kfr').height(860);
