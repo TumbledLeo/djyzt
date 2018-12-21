@@ -754,13 +754,16 @@ body{
     font-size: 18px;
     line-height:48px;
     color:#fff;
-    top: 241px;
+    top: 208px;
 
 text-align: center;
 
 width: 100%;
 position: absolute;
 font-weight: normal;
+overflow: hidden;/*超出部分隐藏*/
+            white-space: nowrap;/*不换行*/
+            text-overflow:ellipsis;/*超出部分文字以...显示*/
   }
 }
 .news{
@@ -768,12 +771,14 @@ font-weight: normal;
   .new{
     display:flex;
     align-content:space-between;
+    align-content:flex-start;
     margin-top:20px;
     li{
       width:230px;
-      height:160px;
+      height:130px;
       overflow: hidden;
       position: relative;
+      margin: 0 10px;
       img{
         width:100%;
         position: relative;
@@ -797,6 +802,7 @@ font-weight: normal;
         color:#fff;
         font-size: 16px;
         left:6px;
+        width:100%;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
